@@ -3,7 +3,7 @@
 An Nginx & Express.js based http/2 server
 
 ## Features
-- [Nginx configuration](https://github.com/leoternoir/http2-start/tree/master/nginx)
+- [Nginx configuration](https://github.com/leoternoir/http2-starter/tree/master/nginx)
 - PM2 Deployement
 - Express.js starter pack
 - Handlebars templating 💩
