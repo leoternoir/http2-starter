@@ -1,0 +1,41 @@
+{
+  "deploy" : {
+    "apps": [
+      {
+        "name": "Example",
+        "script": "server.js",
+        "watch": true,
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "env_production": {
+          "NODE_ENV": "production"
+        }
+      }
+    ],
+    "production" : {
+      "port": 25000,
+      "user" : "username",
+      "host" : "hostname -p port",
+      "ref"  : "origin/master",
+      "repo" : "yourrepo.git",
+      "path" : "path/to/example.com",
+      "post-deploy" : "npm install && pm2 startOrRestart package.json --env production",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "dev" : {
+      "port": 25000,
+      "user" : "username",
+      "host" : "hostname -p port",
+      "ref"  : "origin/master",
+      "repo" : "yourrepo.git",
+      "path" : "path/to/example.com",
+      "post-deploy" : "npm install && pm2 startOrRestart package.json --env dev",
+      "env"  : {
+        "NODE_ENV": "dev"
+      }
+    }
+  }
+}

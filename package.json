@@ -1,0 +1,30 @@
+{
+  "name": "http2-starter",
+  "version": "1.0.0",
+  "description": "An Nginx & Express.js based http/2 server",
+  "main": "server.js",
+  "scripts": {},
+  "author": {
+    "name": "Léo Ternoir",
+    "email": "leo@leoternoir.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leoternoir/http2-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/leoternoir/http2-starter/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "consolidate": "^0.14.1",
+    "errorhandler": "^1.4.3",
+    "express": "4.0.0",
+    "handlebars": "^4.0.5",
+    "lodash": "^4.13.1",
+    "morgan": "^1.7.0",
+    "serve-static": "^1.11.1",
+    "winston": "^2.2.0"
+  }
+}
