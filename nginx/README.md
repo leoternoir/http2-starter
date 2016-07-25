@@ -11,6 +11,16 @@ $ ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled
 $ /etc/init.d/nginx reload
 ```
 
+## Generating ssl keys
+
+Use the ssl configuration you prefer. Personally, I think [Let's Encrypt](https://letsencrypt.org/) is the shit.
+
+Too generate your `dhparam.pem` run :
+
+```
+$ openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+```
+
 ## Careful
 
 This is a spoof nginx folder. Do not clone this folder into your `/etc` folder you dummy ! I strongly recommend manually editing each sites configuration file.
