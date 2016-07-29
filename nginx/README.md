@@ -15,10 +15,10 @@ $ /etc/init.d/nginx reload
 
 Use the ssl configuration you prefer. Personally, I think [Let's Encrypt](https://letsencrypt.org/) is the shit.
 
-Too generate your `dhparam.pem` run :
+To generate your `dhparam.pem` run :
 
 ```
-$ openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+$ openssl dhparam -out /etc/ssl/private/dhparam.pem 2048
 ```
 
 ## Careful
